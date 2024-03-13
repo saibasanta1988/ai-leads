@@ -11,5 +11,10 @@ pipeline {
       git url:"https://github.com/saibasanta1988/ai-leads", branch:"main"
       }
     }
+    stage('Maven Build') {
+      steps{
+      sh "mvn clean package"
+      }
+    }
   }
 }
