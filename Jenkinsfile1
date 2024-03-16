@@ -34,5 +34,10 @@ pipeline {
                echo "Deploying to Production"
             }
         }
+        stage('Hello World') {
+            steps {
+               echo "Hello Basanta"
+            }
+        }
     }
 }
